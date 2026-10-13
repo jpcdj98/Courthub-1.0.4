@@ -1,0 +1,6 @@
+{
+  "name": "CourtHub - Sports Court Reservation",
+  "description": "Responsive sports court reservation web application for basketball, volleyball, badminton, and pickleball with live booking, availability, and scheduling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

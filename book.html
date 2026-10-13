@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Court - CourtHub</title>
+  <meta name="description" content="Reserve your preferred basketball, volleyball, badminton, or pickleball court online with live pricing and instant confirmation.">
+  <meta property="og:title" content="Book a Court - CourtHub">
+  <meta property="og:description" content="Reserve your preferred basketball, volleyball, badminton, or pickleball court online with live pricing and instant confirmation.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="book">
+
+  
+
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        
+        <a href="index.html" class="brand" aria-label="CourtHub Home">
+          <div class="logo-badge">
+            
+            <img src="images/logo.png" alt="CourtHub Logo">
+          </div>
+          <span>CourtHub</span>
+        </a>
+
+        
+        <button id="menuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        
+        <nav id="menu" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="courts.html">Courts</a>
+          <a href="book.html" class="active">Book Now</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <span class="section-tag">Instant Reservation</span>
+        <h1 class="section-title">Book Your Court</h1>
+        <p class="section-desc">
+          Select your desired sport, court, schedule, and player details. Our live pricing system updates automatically based on your duration.
+        </p>
+      </div>
+
+      
+      <div class="book-layout">
+
+        
+
+
+        <div class="booking-form-card">
+          <form id="bookForm" novalidate>
+
+            
+            <div class="form-group">
+              <label for="sport" class="form-label">Sport</label>
+              <select id="sport" class="form-select">
+                <option value="">-- All Sports / Filter Courts --</option>
+                <option value="basketball">Basketball</option>
+                <option value="volleyball">Volleyball</option>
+                <option value="badminton">Badminton</option>
+                <option value="pickleball">Pickleball</option>
+              </select>
+            </div>
+
+            
+            <div class="form-group">
+              <label for="court" class="form-label">Court Selection *</label>
+              <select id="court" class="form-select" required>
+                <option value="">-- Select a Court --</option>
+                <option value="court-bball-1">Championship Hardwood Court 1 (₱1,200/hr)</option>
+                <option value="court-bball-2">Community Hardwood Court 2 (₱950/hr)</option>
+                <option value="court-bball-3">Open-Air FIBA Court 3 (₱700/hr)</option>
+                <option value="court-vball-1">Olympic Taraflex Court A (₱900/hr)</option>
+                <option value="court-vball-2">Pro Cushioned Court B (₱800/hr)</option>
+                <option value="court-badmin-1">Tournament Mat Court 1 (₱550/hr)</option>
+                <option value="court-badmin-2">Tournament Mat Court 2 (₱550/hr)</option>
+                <option value="court-badmin-3">Practice Court 3 (₱450/hr)</option>
+                <option value="court-pickle-1">Grandstand Pickleball Court 1 (₱600/hr)</option>
+                <option value="court-pickle-2">Covered Pickleball Court 2 (₱600/hr)</option>
+                <option value="court-pickle-3">Outdoor Pickleball Court 3 (₱500/hr)</option>
+              </select>
+              <small class="err" id="err-court"></small>
+            </div>
+
+            
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="date" class="form-label">Reservation Date *</label>
+                <input type="date" id="date" class="form-input" required>
+                <small class="err" id="err-date"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="start" class="form-label">Start Time *</label>
+                <select id="start" class="form-select" required>
+                  <option value="">-- Select Time Slot --</option>
+                  <option value="05:00">5:00 AM</option>
+                  <option value="06:00">6:00 AM</option>
+                  <option value="07:00">7:00 AM</option>
+                  <option value="08:00">8:00 AM</option>
+                  <option value="09:00">9:00 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="16:00">4:00 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                  <option value="22:00">10:00 PM</option>
+                </select>
+                <small class="err" id="err-start"></small>
+              </div>
+            </div>
+
+            
+            <div id="courtScheduleNotice" class="court-schedule-notice" aria-live="polite"></div>
+
+            
+            <div class="form-group">
+              <label for="hours" class="form-label">Duration (Hours) *</label>
+              <select id="hours" class="form-select" required>
+                <option value="1">1 Hour</option>
+                <option value="2" selected>2 Hours</option>
+                <option value="3">3 Hours</option>
+                <option value="4">4 Hours (Max)</option>
+              </select>
+              <small class="err" id="err-hours"></small>
+            </div>
+
+            
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Juan Dela Cruz" required>
+                <small class="err" id="err-fullName"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="phone" class="form-input" placeholder="e.g. 0917 123 4567" required>
+                <small class="err" id="err-phone"></small>
+              </div>
+            </div>
+
+            
+            <div class="total-summary-card">
+              <div class="total-summary-label">
+                <span>Calculated Total</span>
+                <small>Includes court reservation & facility lighting</small>
+              </div>
+              <div id="total">₱0</div>
+            </div>
+
+            
+            <div class="form-group" style="margin-top: 24px;">
+              <label class="form-label">Payment Method *</label>
+              <div class="payment-options-grid">
+                <label class="payment-option-card selected" id="optGcash">
+                  <input type="radio" name="payMethod" value="gcash" checked>
+                  <div class="payment-option-content">
+                    <div class="payment-title-row">
+                      <span class="gcash-badge">GCash</span>
+                      <strong>GCash E-Wallet</strong>
+                    </div>
+                    <small>Instant simulated payment via GCash Mobile & MPIN</small>
+                  </div>
+                </label>
+                <label class="payment-option-card" id="optCounter">
+                  <input type="radio" name="payMethod" value="counter">
+                  <div class="payment-option-content">
+                    <div class="payment-title-row">
+                      <span class="counter-badge">Counter</span>
+                      <strong>Pay at Counter</strong>
+                    </div>
+                    <small>Settle cash payment upon check-in at reception</small>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            
+            <div>
+              <button type="submit" id="submitBtn" class="btn lg full">Proceed to GCash Payment</button>
+            </div>
+          </form>
+        </div>
+
+        
+
+
+        <aside class="rules-panel" aria-label="Facility Policies">
+          <h2 class="rules-heading">
+            <span aria-hidden="true">📋</span> Court Rules & Policies
+          </h2>
+          <ul class="rules-list">
+            <li>
+              <div class="rules-icon">✓</div>
+              <div>
+                <strong>Operating Schedule</strong>
+                <p>Courts open at 5:00 AM and close promptly at 11:00 PM every day.</p>
+              </div>
+            </li>
+            <li>
+              <div class="rules-icon">✓</div>
+              <div>
+                <strong>Advance Window</strong>
+                <p>Bookings are accepted up to 14 days ahead. Same-day reservations subject to real-time slot availability.</p>
+              </div>
+            </li>
+            <li>
+              <div class="rules-icon">✓</div>
+              <div>
+                <strong>Footwear Requirement</strong>
+                <p>Non-marking rubber shoes are strictly required on all hardwood and Taraflex surfaces.</p>
+              </div>
+            </li>
+            <li>
+              <div class="rules-icon">✓</div>
+              <div>
+                <strong>Grace Period & Cancellations</strong>
+                <p>Please arrive 10 minutes before your slot. Free cancellation up to 2 hours prior to start time in My Bookings.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="rules-highlight-box">
+            <strong>Need equipment rental?</strong>
+            <p style="margin-top: 4px;">Volleyballs, basketballs, badminton rackets, and pickleball paddles can be rented at the front reception counter upon check-in.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  
+
+
+  <div id="gcashModal" class="gcash-modal-backdrop" hidden role="dialog" aria-modal="true" aria-labelledby="gcashModalTitle">
+    <div class="gcash-modal-box">
+      
+      <div class="gcash-modal-header">
+        <div class="gcash-brand-wrap">
+          <div class="gcash-logo-pill" aria-hidden="true">G</div>
+          <div>
+            <h3 id="gcashModalTitle">GCash Checkout</h3>
+            <small>Merchant: CourtHub Sports Complex</small>
+          </div>
+        </div>
+        <button type="button" id="closeGcashModal" class="gcash-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      
+      <div class="gcash-modal-body">
+        
+        <div class="gcash-amount-banner">
+          <span class="gcash-amount-label">Total Amount to Pay</span>
+          <div class="gcash-amount-val" id="gcashAmountText">₱0.00</div>
+          <div class="gcash-order-desc" id="gcashOrderDesc">Court Reservation · 2 Hours</div>
+        </div>
+
+        
+        <form id="fakeGcashForm" novalidate>
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="gcashPhone" class="form-label" style="font-size: 0.8125rem;">GCash Registered Mobile Number *</label>
+            <input type="tel" id="gcashPhone" class="form-input" placeholder="09XX XXX XXXX" required>
+            <small class="err" id="err-gcashPhone"></small>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label for="gcashMpin" class="form-label" style="font-size: 0.8125rem;">4-Digit MPIN * (Demo: Any 4 digits)</label>
+            <input type="password" id="gcashMpin" class="form-input" placeholder="••••" maxlength="4" required>
+            <small class="err" id="err-gcashMpin"></small>
+          </div>
+
+          <div class="gcash-demo-note">
+            <span>ℹ️</span> <strong>School Project Demo:</strong> This simulates the GCash e-wallet payment checkout. No actual money or banking credentials are charged.
+          </div>
+
+          
+          <div id="gcashProcessing" class="gcash-processing" hidden>
+            <div class="gcash-spinner"></div>
+            <p>Authorizing transaction with GCash...</p>
+          </div>
+
+          
+          <div class="gcash-action-row">
+            <button type="button" id="cancelGcashBtn" class="btn ghost sm">Cancel</button>
+            <button type="submit" id="payGcashBtn" class="btn sm gcash-btn">
+              <span>Authorize & Pay</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-grid">
+        
+        <div>
+          <a href="index.html" class="brand" aria-label="CourtHub Home">
+            <div class="logo-badge">
+              
+              <img src="images/logo.png" alt="CourtHub Logo">
+            </div>
+            <span>CourtHub</span>
+          </a>
+          <p class="foot-brand-desc">
+            Your premier community sports destination. Designed for players, teams, and tournament organizers seeking quality courts and frictionless scheduling.
+          </p>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Quick Links</h4>
+          <ul class="foot-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courts.html">Browse Courts</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="my-bookings.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Facility Information</h4>
+          <ul class="foot-info-list">
+            <li class="foot-info-item">
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Open Daily: 5:00 AM – 11:00 PM</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Address</strong>
+                <span>Bahay ni John Paul De Jesus</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Contact Hotline</strong>
+                <span>+67 967 676 6767</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p>&copy; 2026 CourtHub. All rights reserved. School Project Prototype.</p>
+        <p>Basketball · Volleyball · Badminton · Pickleball</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

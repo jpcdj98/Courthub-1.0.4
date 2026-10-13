@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CourtHub - Sports Court Reservation</title>
+  <meta name="description" content="Responsive sports court reservation web application for basketball, volleyball, badminton, and pickleball with live booking, availability, and scheduling.">
+  <meta property="og:title" content="CourtHub - Sports Court Reservation">
+  <meta property="og:description" content="Responsive sports court reservation web application for basketball, volleyball, badminton, and pickleball with live booking, availability, and scheduling.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  
+
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        
+        <a href="index.html" class="brand" aria-label="CourtHub Home">
+          
+          <div class="logo-badge">
+            
+            <img src="images/logo.png" alt="CourtHub Logo">
+          </div>
+          <span>CourtHub</span>
+        </a>
+
+        
+        <button id="menuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        
+        <nav id="menu" role="navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="courts.html">Courts</a>
+          <a href="book.html">Book Now</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+
+
+    <section class="hero-athletic">
+      <div class="hero-court-lines" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-athletic-inner">
+          <div class="hero-eyebrow-pill">
+            <span class="pulse-indicator"></span>
+            METRO MANILA ATHLETIC HUB · OPEN 5:00 AM – 11:00 PM DAILY
+          </div>
+
+          <h1 class="hero-display-headline">
+            Book Your Court. <br>
+            <span class="orange-highlight">Command The Game.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Championship-grade indoor hardwood, Taraflex, and cushioned acrylic courts across basketball, volleyball, badminton, and pickleball with instant guaranteed reservations.
+          </p>
+
+          
+          <div class="hero-cta-cluster">
+            <a href="book.html" class="btn lg">Book Now</a>
+            <a href="courts.html" class="btn ghost white lg">Browse Courts</a>
+          </div>
+
+          
+          <div class="sport-launch-bar" aria-label="Quick Sport Shortcuts">
+            <a href="courts.html?sport=basketball" class="sport-launch-item">
+              <span class="sport-emoji" aria-hidden="true">🏀</span>
+              <div>
+                <span>Basketball</span>
+                <small>3 Courts</small>
+              </div>
+            </a>
+            <a href="courts.html?sport=volleyball" class="sport-launch-item">
+              <span class="sport-emoji" aria-hidden="true">🏐</span>
+              <div>
+                <span>Volleyball</span>
+                <small>2 Courts</small>
+              </div>
+            </a>
+            <a href="courts.html?sport=badminton" class="sport-launch-item">
+              <span class="sport-emoji" aria-hidden="true">🏸</span>
+              <div>
+                <span>Badminton</span>
+                <small>3 Courts</small>
+              </div>
+            </a>
+            <a href="courts.html?sport=pickleball" class="sport-launch-item">
+              <span class="sport-emoji" aria-hidden="true">🏓</span>
+              <div>
+                <span>Pickleball</span>
+                <small>3 Courts</small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <section class="facility-ticker-strip" aria-label="Facility Operational Highlights">
+      <div class="container">
+        <div class="ticker-grid">
+          <div class="ticker-item">
+            <div class="ticker-icon-circle" aria-hidden="true">🏟️</div>
+            <div class="ticker-text">
+              <strong>11 Active Courts</strong>
+              <span>Indoor air-conditioned & covered</span>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <div class="ticker-icon-circle" aria-hidden="true">🛡️</div>
+            <div class="ticker-text">
+              <strong>Pro Grade Flooring</strong>
+              <span>FIBA maple wood & Olympic Taraflex</span>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <div class="ticker-icon-circle" aria-hidden="true">⏱️</div>
+            <div class="ticker-text">
+              <strong>14-Day Advance Window</strong>
+              <span>Real-time availability calendar</span>
+            </div>
+          </div>
+
+          <div class="ticker-item">
+            <div class="ticker-icon-circle" aria-hidden="true">🎯</div>
+            <div class="ticker-text">
+              <strong>Instant Confirmation</strong>
+              <span>No back-and-forth messaging needed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Facilities Showcase</span>
+          <h2 class="section-title">Pick Your Game</h2>
+          <p class="section-desc">
+            Engineered surfaces built for collegiate tournaments, casual shootarounds, and competitive league play.
+          </p>
+        </div>
+
+        <div class="bento-sports-grid">
+
+          
+          <article class="bento-card-marquee">
+            
+            <img src="src/assets/sport-basketball.jpg" alt="Championship Basketball Arena" class="bento-marquee-bg" loading="lazy">
+            <div class="bento-marquee-overlay"></div>
+
+            <div class="bento-marquee-content">
+              <span class="bento-badge">Basketball Arena</span>
+              <h3 class="bento-marquee-title">FIBA Maple Hardwood Courts</h3>
+              <p class="bento-marquee-desc">
+                High-performance spring-cushioned Canadian maple flooring, professional breakaway rims, full air-conditioning, and electronic shot clocks for competitive games.
+              </p>
+
+              <div class="bento-marquee-chips">
+                <span class="bento-chip">3 Courts Available</span>
+                <span class="bento-chip">Glass Backboards</span>
+                <span class="bento-chip">Player Benches</span>
+              </div>
+
+              <div class="bento-marquee-bottom">
+                <div class="price" style="color: #FFFFFF;">
+                  ₱700 – ₱1,200 <small style="color: #d1dde9;">/ hr</small>
+                </div>
+                <a href="courts.html?sport=basketball" class="btn">View Basketball</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="bento-subcard">
+            <div class="bento-subcard-img">
+              
+              <img src="src/assets/sport-volleyball.jpg" alt="Olympic Taraflex Volleyball Court" loading="lazy">
+              <span class="court-badge-sport" style="position: absolute; top: 12px; left: 12px;">Volleyball</span>
+            </div>
+            <div class="bento-subcard-body">
+              <h3 class="bento-subcard-title">Olympic Taraflex Volleyball</h3>
+              <p class="bento-subcard-desc">
+                Official Gerflor Taraflex surface reducing athlete fatigue, competition-height tension nets, antenna systems, and referee stands.
+              </p>
+              <div class="bento-subcard-footer">
+                <div class="price">₱800 – ₱900 <small>/ hr</small></div>
+                <a href="courts.html?sport=volleyball" class="btn sm">Book Court</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="bento-subcard">
+            <div class="bento-subcard-img">
+              
+              <img src="src/assets/sport-pickleball.jpg" alt="Cushioned Acrylic Pickleball Court" loading="lazy">
+              <span class="court-badge-sport" style="position: absolute; top: 12px; left: 12px;">Pickleball</span>
+            </div>
+            <div class="bento-subcard-body">
+              <h3 class="bento-subcard-title">Cushioned Acrylic Pickleball</h3>
+              <p class="bento-subcard-desc">
+                Permanent tournament net systems, crisp non-glare court lines, all-weather acrylic coatings, and court-side spectator bleachers.
+              </p>
+              <div class="bento-subcard-footer">
+                <div class="price">₱500 – ₱600 <small>/ hr</small></div>
+                <a href="courts.html?sport=pickleball" class="btn sm">Book Court</a>
+              </div>
+            </div>
+          </article>
+
+          
+          <article class="bento-full-strip">
+            <div class="bento-strip-img">
+              
+              <img src="src/assets/sport-badminton.jpg" alt="BWF Tournament Green Mat Badminton Court" loading="lazy">
+            </div>
+            <div class="bento-strip-body">
+              <div>
+                <span class="section-tag">Badminton Hall</span>
+                <h3 class="bento-subcard-title" style="font-size: 1.45rem;">BWF-Certified Green Mat Hall</h3>
+              </div>
+              <p class="bento-subcard-desc">
+                3 dedicated badminton courts engineered with draft-free enclosed airflow, anti-slip multi-layer vinyl mats, and 10-meter unobstructed vertical ceiling height.
+              </p>
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; margin-top: 8px;">
+                <div class="price">₱450 – ₱550 <small>/ hr</small></div>
+                <a href="courts.html?sport=badminton" class="btn sm">View Badminton Courts</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <section class="section amenities-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag" style="color: var(--court-orange);">Campus Athletic Standards</span>
+          <h2 class="section-title light">Everything You Need To Compete</h2>
+          <p class="section-desc light">
+            Beyond pristine court floors, CourtHub is outfitted with top-tier athletic amenities for players and spectators.
+          </p>
+        </div>
+
+        <div class="amenities-grid">
+          <div class="amenity-card">
+            <div class="amenity-icon-box" aria-hidden="true">💡</div>
+            <h3>500+ Lux Pro Stadium Lighting</h3>
+            <p>Anti-glare overhead LED floodlights calibrated specifically to eliminate harsh shadows during evening play.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-box" aria-hidden="true">❄️</div>
+            <h3>Climate-Controlled Enclosures</h3>
+            <p>Industrial HVLS air-circulators and central HVAC systems ensuring comfortable temperatures all game long.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-box" aria-hidden="true">🚿</div>
+            <h3>Lockers & Fresh Showers</h3>
+            <p>Clean, secure locker facilities, water refill stations, and private shower suites for post-match recovery.</p>
+          </div>
+
+          <div class="amenity-card">
+            <div class="amenity-icon-box" aria-hidden="true">🎒</div>
+            <h3>Equipment Rental Desk</h3>
+            <p>Mikasa volleyballs, Wilson basketballs, Yonex badminton racquets, and pickleball paddles available on site.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <section class="section">
+      <div class="container">
+        <div class="how-it-works-editorial">
+
+          
+          <div class="editorial-intro">
+            <span class="section-tag">Frictionless Process</span>
+            <h2>How It Works</h2>
+            <p>
+              Forget tedious messaging and unconfirmed schedule conflicts. CourtHub delivers an instant, transparent booking engine designed for players, team captains, and tournament coordinators.
+            </p>
+
+            <div class="editorial-guarantee-box">
+              <div class="guarantee-badge">✓</div>
+              <div class="guarantee-text">
+                <strong>Zero Double-Booking Guarantee</strong>
+                <p>When you confirm a slot, our system instantly locks the time block and confirms your reservation.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 28px;">
+              <a href="book.html" class="btn">Reserve a Court Now</a>
+            </div>
+          </div>
+
+          
+          <div class="editorial-steps-stack">
+
+            
+            <div class="editorial-step-item">
+              <div class="step-num-display">01</div>
+              <div class="step-content-detail">
+                <h3>Select Your Sport & Court</h3>
+                <p>
+                  Explore 11 courts filtered by sport, flooring type (hardwood, Taraflex, mat, acrylic), and hourly rate.
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="editorial-step-item">
+              <div class="step-num-display">02</div>
+              <div class="step-content-detail">
+                <h3>Pick Your Date & Time Slot</h3>
+                <p>
+                  Choose any slot between 5:00 AM and 11:00 PM up to 14 days in advance. Live price calculation updates instantly with your duration.
+                </p>
+              </div>
+            </div>
+
+            
+            <div class="editorial-step-item">
+              <div class="step-num-display">03</div>
+              <div class="step-content-detail">
+                <h3>Confirm & Play</h3>
+                <p>
+                  Input your player details and receive an immediate booking reference. View or cancel anytime in My Bookings.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        
+        <div class="direct-reserve-banner">
+          <div>
+            <h3>Ready to run the court?</h3>
+            <p>Weekend and evening peak slots fill quickly. Check real-time court availability and lock in your game today.</p>
+          </div>
+          <div class="banner-action-wrap">
+            <a href="book.html" class="btn lg">Book a Court Now</a>
+            <a href="courts.html" class="btn ghost white lg">Browse All Courts</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  
+
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-grid">
+        
+        <div>
+          <a href="index.html" class="brand" aria-label="CourtHub Home">
+            <div class="logo-badge">
+              
+              <img src="images/logo.png" alt="CourtHub Logo">
+            </div>
+            <span>CourtHub</span>
+          </a>
+          <p class="foot-brand-desc">
+            Your premier community sports destination. Designed for players, teams, and tournament organizers seeking quality courts and frictionless scheduling.
+          </p>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Quick Links</h4>
+          <ul class="foot-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courts.html">Browse Courts</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="my-bookings.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Facility Information</h4>
+          <ul class="foot-info-list">
+            <li class="foot-info-item">
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Open Daily: 5:00 AM – 11:00 PM</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Address</strong>
+                <span>Bahay ni John Paul De Jesus</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Contact Hotline</strong>
+                <span>+67 967 676 6767</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p>&copy; 2026 CourtHub. All rights reserved. School Project Prototype.</p>
+        <p>Basketball · Volleyball · Badminton · Pickleball</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

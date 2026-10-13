@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courts & Rates - CourtHub</title>
+  <meta name="description" content="Explore and filter indoor and outdoor basketball, volleyball, badminton, and pickleball courts with transparent hourly rates.">
+  <meta property="og:title" content="Courts & Rates - CourtHub">
+  <meta property="og:description" content="Explore and filter indoor and outdoor basketball, volleyball, badminton, and pickleball courts with transparent hourly rates.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="courts">
+
+  
+
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        
+        <a href="index.html" class="brand" aria-label="CourtHub Home">
+          <div class="logo-badge">
+            
+            <img src="images/logo.png" alt="CourtHub Logo">
+          </div>
+          <span>CourtHub</span>
+        </a>
+
+        
+        <button id="menuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        
+        <nav id="menu" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="courts.html" class="active">Courts</a>
+          <a href="book.html">Book Now</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <span class="section-tag">Facilities & Schedules</span>
+        <h1 class="section-title">Available Courts</h1>
+        <p class="section-desc">
+          Browse our full lineup of clean, competition-ready courts. Search by court name, sport type, or surface specification.
+        </p>
+      </div>
+
+      
+
+
+      <div class="filter-bar">
+        <div class="search-input-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            type="search"
+            id="search"
+            class="form-input"
+            placeholder="Search by court name, flooring, or sport..."
+            aria-label="Search courts by name or features"
+          >
+        </div>
+
+        <div>
+          <select id="sportFilter" class="form-select" aria-label="Filter courts by sport">
+            <option value="">All Sports (11 Courts)</option>
+            <option value="basketball">Basketball (3)</option>
+            <option value="volleyball">Volleyball (2)</option>
+            <option value="badminton">Badminton (3)</option>
+            <option value="pickleball">Pickleball (3)</option>
+          </select>
+        </div>
+      </div>
+
+      
+
+
+      <div id="courtList">
+
+        
+
+        
+        <article class="card" data-sport="basketball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/basketball_court_1791813344241.jpg" alt="Championship Hardwood Court 1" loading="lazy">
+            <span class="court-badge-type">Indoor AC</span>
+            <span class="court-badge-sport">Basketball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Championship Hardwood Court 1</h3>
+            <div class="court-features">
+              <span>FIBA Maple Wood</span>
+              <span>Breakaway Rims</span>
+              <span>Digital Clock</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱1,200 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=basketball&court=court-bball-1" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="basketball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/sport-basketball.jpg" alt="Community Hardwood Court 2" loading="lazy">
+            <span class="court-badge-type">Indoor Fan-Cooled</span>
+            <span class="court-badge-sport">Basketball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Community Hardwood Court 2</h3>
+            <div class="court-features">
+              <span>Maple Hardwood</span>
+              <span>Glass Backboards</span>
+              <span>Player Benches</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱950 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=basketball&court=court-bball-2" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="basketball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/open-air FIBA court 3.jpg" alt="Open-Air FIBA Court 3" loading="lazy">
+            <span class="court-badge-type">Covered Open-Air</span>
+            <span class="court-badge-sport">Basketball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Open-Air FIBA Court 3</h3>
+            <div class="court-features">
+              <span>Cushioned Acrylic</span>
+              <span>High-Lumen Floodlights</span>
+              <span>Covered Roof</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱700 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=basketball&court=court-bball-3" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+
+        
+        <article class="card" data-sport="volleyball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/Olympic Taraflex Court A.jpg" alt="Olympic Taraflex Court A" loading="lazy">
+            <span class="court-badge-type">Indoor AC</span>
+            <span class="court-badge-sport">Volleyball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Olympic Taraflex Court A</h3>
+            <div class="court-features">
+              <span>Taraflex Flooring</span>
+              <span>Pro Tension Nets</span>
+              <span>Referee Stand</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱900 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=volleyball&court=court-vball-1" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="volleyball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/Pro Cushioned Court B.png" alt="Pro Cushioned Court B" loading="lazy">
+            <span class="court-badge-type">Indoor Fan-Cooled</span>
+            <span class="court-badge-sport">Volleyball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Pro Cushioned Court B</h3>
+            <div class="court-features">
+              <span>Polyurethane Floor</span>
+              <span>Antenna & Pads</span>
+              <span>High Ceiling</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱800 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=volleyball&court=court-vball-2" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+
+        
+        <article class="card" data-sport="badminton">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/Tournament Mat Court 1.jpg" alt="Tournament Mat Court 1" loading="lazy">
+            <span class="court-badge-type">Indoor AC</span>
+            <span class="court-badge-sport">Badminton</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Tournament Mat Court 1</h3>
+            <div class="court-features">
+              <span>BWF Green Mat</span>
+              <span>Draft-Free Airflow</span>
+              <span>Glare-Free Lighting</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱550 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=badminton&court=court-badmin-1" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="badminton">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/badminton_court_1791813375459.jpg" alt="Tournament Mat Court 2" loading="lazy">
+            <span class="court-badge-type">Indoor AC</span>
+            <span class="court-badge-sport">Badminton</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Tournament Mat Court 2</h3>
+            <div class="court-features">
+              <span>BWF Green Mat</span>
+              <span>Non-Slip Surface</span>
+              <span>10m Clearance</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱550 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=badminton&court=court-badmin-2" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="badminton">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/practice court a.ng.webp" alt="Practice Court 3" loading="lazy">
+            <span class="court-badge-type">Indoor Fan-Cooled</span>
+            <span class="court-badge-sport">Badminton</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Practice Court 3</h3>
+            <div class="court-features">
+              <span>Standard Vinyl Mat</span>
+              <span>Solid Net Posts</span>
+              <span>Warm-up Space</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱450 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=badminton&court=court-badmin-3" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+
+        
+        <article class="card" data-sport="pickleball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/granstand pickleball court.jpg" alt="Grandstand Pickleball Court 1" loading="lazy">
+            <span class="court-badge-type">Indoor AC</span>
+            <span class="court-badge-sport">Pickleball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Grandstand Pickleball Court 1</h3>
+            <div class="court-features">
+              <span>Cushioned Acrylic</span>
+              <span>Permanent Net</span>
+              <span>Spectator Seating</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱600 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=pickleball&court=court-pickle-1" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="pickleball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/coverd pickleball court.jpeg" alt="Covered Pickleball Court 2" loading="lazy">
+            <span class="court-badge-type">Covered Outdoor</span>
+            <span class="court-badge-sport">Pickleball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Covered Pickleball Court 2</h3>
+            <div class="court-features">
+              <span>All-Weather Surface</span>
+              <span>High Ceiling</span>
+              <span>LED Illumination</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱600 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=pickleball&court=court-pickle-2" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="card" data-sport="pickleball">
+          <div class="court-card-img-wrap">
+            
+            <img src="src/assets/outdoor pickleball court.jpeg" alt="Outdoor Pickleball Court 3" loading="lazy">
+            <span class="court-badge-type">Outdoor Open-Air</span>
+            <span class="court-badge-sport">Pickleball</span>
+          </div>
+          <div class="court-card-body">
+            <h3 class="court-name">Outdoor Pickleball Court 3</h3>
+            <div class="court-features">
+              <span>Hard Court Acrylic</span>
+              <span>Night Lights</span>
+              <span>Fenced Enclosure</span>
+            </div>
+            <div class="court-card-footer">
+              <div class="price">
+                ₱500 <small>/ hr</small>
+              </div>
+              <a href="book.html?sport=pickleball&court=court-pickle-3" class="btn sm">Book</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  
+
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-grid">
+        
+        <div>
+          <a href="index.html" class="brand" aria-label="CourtHub Home">
+            <div class="logo-badge">
+              
+              <img src="images/logo.png" alt="CourtHub Logo">
+            </div>
+            <span>CourtHub</span>
+          </a>
+          <p class="foot-brand-desc">
+            Your premier community sports destination. Designed for players, teams, and tournament organizers seeking quality courts and frictionless scheduling.
+          </p>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Quick Links</h4>
+          <ul class="foot-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courts.html">Browse Courts</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="my-bookings.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Facility Information</h4>
+          <ul class="foot-info-list">
+            <li class="foot-info-item">
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Open Daily: 5:00 AM – 11:00 PM</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Address</strong>
+                <span>Bahay ni John Paul De Jesus</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Contact Hotline</strong>
+                <span>+67 967 676 6767</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p>&copy; 2026 CourtHub. All rights reserved. School Project Prototype.</p>
+        <p>Basketball · Volleyball · Badminton · Pickleball</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

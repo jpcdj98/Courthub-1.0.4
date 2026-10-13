@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings - CourtHub</title>
+  <meta name="description" content="View and manage your active sports court reservations at CourtHub with real-time status and cancellation management.">
+  <meta property="og:title" content="My Bookings - CourtHub">
+  <meta property="og:description" content="View and manage your active sports court reservations at CourtHub with real-time status and cancellation management.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" crossorigin href="/assets/style-DEvhtaNu.css">
+</head>
+<body data-page="bookings">
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        <!-- Brand Logo & Name -->
+        <a href="index.html" class="brand" aria-label="CourtHub Home">
+          <div class="logo-badge">
+            <!-- YOUR PHOTO HERE: Logo file (images/logo.png) -->
+            <img src="/assets/logo-V5sRmfHb.png" alt="CourtHub Logo">
+          </div>
+          <span>CourtHub</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle Button -->
+        <button id="menuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Nav Links (Active state on My Bookings) -->
+        <nav id="menu" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="courts.html">Courts</a>
+          <a href="book.html">Book Now</a>
+          <a href="my-bookings.html" class="active">My Bookings</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-title-wrap">
+        <span class="section-tag">Reservation Management</span>
+        <h1 class="section-title">My Bookings</h1>
+        <p class="section-desc">
+          Review your upcoming scheduled games, check assigned court slots, and manage reservations at CourtHub.
+        </p>
+      </div>
+
+      <!-- ==========================================================================
+           CONFIRMATION / NOTICE BANNER
+           Required hook: banner id "notice" (hidden attribute by default)
+           ========================================================================== -->
+      <div id="notice" hidden role="alert" aria-live="polite">
+        <span aria-hidden="true" style="font-size: 1.25rem;">✓</span>
+        <div>
+          <strong>Booking Confirmed!</strong>
+          <p style="margin: 0; font-size: 0.875rem;">Your court slot has been secured. A confirmation SMS has been queued for your mobile number.</p>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           BOOKINGS GRID CONTAINER
+           Required hooks: container id "bookingList", cancel buttons use class "btn ghost"
+           Includes realistic SAMPLE content marked with HTML comments
+           ========================================================================== -->
+      <div id="bookingList">
+
+        <!-- ==================== SAMPLE BOOKING 1 (Basketball) ==================== -->
+        <div class="booking-item-card">
+          <div class="booking-item-header">
+            <div>
+              <span class="section-tag">Basketball</span>
+              <h3 class="booking-ref-title">Championship Hardwood Court 1</h3>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+              <span class="booking-badge-confirmed">Confirmed</span>
+              <span class="booking-badge-paid">✓ Paid (GCash)</span>
+            </div>
+          </div>
+
+          <div class="booking-detail-rows">
+            <div>
+              <div class="booking-detail-label">Date</div>
+              <div class="booking-detail-val">Fri, Oct 16, 2026</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Time Slot</div>
+              <div class="booking-detail-val">6:00 PM – 8:00 PM (2 hrs)</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Reserved For</div>
+              <div class="booking-detail-val">Marco Valenzuela</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Contact Phone</div>
+              <div class="booking-detail-val">0917 555 4321</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Payment Method</div>
+              <div class="booking-detail-val">GCash E-Wallet</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Reference No.</div>
+              <div class="booking-detail-val" style="font-family: monospace; font-size: 0.8125rem;">GC-849201</div>
+            </div>
+          </div>
+
+          <div class="booking-card-action">
+            <div>
+              <span class="price">₱2,400 <small>/ total</small></span>
+            </div>
+            <!-- Cancel button uses class "btn ghost" -->
+            <button type="button" class="btn ghost cancel-booking-btn" data-index="0">
+              Cancel
+            </button>
+          </div>
+        </div>
+
+        <!-- ==================== SAMPLE BOOKING 2 (Pickleball) ==================== -->
+        <div class="booking-item-card">
+          <div class="booking-item-header">
+            <div>
+              <span class="section-tag">Pickleball</span>
+              <h3 class="booking-ref-title">Grandstand Pickleball Court 1</h3>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+              <span class="booking-badge-confirmed">Confirmed</span>
+              <span class="booking-badge-paid">✓ Paid (Card)</span>
+            </div>
+          </div>
+
+          <div class="booking-detail-rows">
+            <div>
+              <div class="booking-detail-label">Date</div>
+              <div class="booking-detail-val">Sat, Oct 17, 2026</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Time Slot</div>
+              <div class="booking-detail-val">8:00 AM – 9:00 AM (1 hr)</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Reserved For</div>
+              <div class="booking-detail-val">Angela Reyes</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Contact Phone</div>
+              <div class="booking-detail-val">0928 333 8899</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Payment Method</div>
+              <div class="booking-detail-val">Visa Card</div>
+            </div>
+            <div>
+              <div class="booking-detail-label">Reference No.</div>
+              <div class="booking-detail-val" style="font-family: monospace; font-size: 0.8125rem;">CARD-4899</div>
+            </div>
+          </div>
+
+          <div class="booking-card-action">
+            <div>
+              <span class="price">₱600 <small>/ total</small></span>
+            </div>
+            <!-- Cancel button uses class "btn ghost" -->
+            <button type="button" class="btn ghost cancel-booking-btn" data-index="1">
+              Cancel
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER (Required class "foot")
+       ========================================================================== -->
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-grid">
+        <!-- Footer Column 1: Brand -->
+        <div>
+          <a href="index.html" class="brand" aria-label="CourtHub Home">
+            <div class="logo-badge">
+              <!-- YOUR PHOTO HERE: Logo file (images/logo.png) -->
+              <img src="/assets/logo-V5sRmfHb.png" alt="CourtHub Logo">
+            </div>
+            <span>CourtHub</span>
+          </a>
+          <p class="foot-brand-desc">
+            Your premier community sports destination. Designed for players, teams, and tournament organizers seeking quality courts and frictionless scheduling.
+          </p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div>
+          <h4 class="foot-heading">Quick Links</h4>
+          <ul class="foot-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courts.html">Browse Courts</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="my-bookings.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Hours & Address (Required) -->
+        <div>
+          <h4 class="foot-heading">Facility Information</h4>
+          <ul class="foot-info-list">
+            <li class="foot-info-item">
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Open Daily: 5:00 AM – 11:00 PM</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Address</strong>
+                <span>Bahay ni John Paul De Jesus</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Contact Hotline</strong>
+                <span>+67 967 676 6767</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p>&copy; 2026 CourtHub. All rights reserved. School Project Prototype.</p>
+        <p>Basketball · Volleyball · Badminton · Pickleball</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       OFFICIAL BOOKING RECEIPT MODAL
+       ========================================================================== -->
+  <div id="receiptModal" class="modal-overlay" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="receiptModalTitle">
+    <div class="modal-dialog receipt-dialog">
+      <div class="modal-header">
+        <div class="modal-brand-tag">
+          <span class="modal-gateway-icon">🧾</span>
+          <div>
+            <h3 class="modal-title" id="receiptModalTitle">Official Booking Receipt</h3>
+            <span class="modal-subtitle">CourtHub Electronic Voucher</span>
+          </div>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeReceiptModal" aria-label="Close modal">×</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="receipt-paper" id="receiptPrintArea">
+          <div class="receipt-header-row">
+            <div class="receipt-logo-wrap">
+              <img src="/assets/logo-V5sRmfHb.png" alt="CourtHub Logo" style="width: 38px; height: 38px; object-fit: contain;">
+              <div>
+                <strong>CourtHub Athletics</strong>
+                <small>Metro Manila, Philippines</small>
+              </div>
+            </div>
+            <div class="receipt-paid-stamp">PAID</div>
+          </div>
+
+          <div class="receipt-divider"></div>
+
+          <div class="receipt-meta-grid">
+            <div>
+              <span class="receipt-meta-label">Booking Reference:</span>
+              <strong class="receipt-meta-val" id="recBookingId">BK-849201</strong>
+            </div>
+            <div>
+              <span class="receipt-meta-label">Payment Method:</span>
+              <strong class="receipt-meta-val" id="recPaymentMethod">GCash E-Wallet</strong>
+            </div>
+            <div>
+              <span class="receipt-meta-label">Transaction Ref:</span>
+              <strong class="receipt-meta-val" id="recPaymentRef">GC-592813</strong>
+            </div>
+            <div>
+              <span class="receipt-meta-label">Issued On:</span>
+              <span class="receipt-meta-val" id="recIssuedDate">Today</span>
+            </div>
+          </div>
+
+          <div class="receipt-divider"></div>
+
+          <div class="receipt-court-details">
+            <h4 id="recCourtName" style="color: var(--midnight-navy); font-size: 1.1rem; margin-bottom: 4px;">Championship Hardwood Court 1</h4>
+            <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 8px;" id="recCourtSchedule">Friday, Oct 16, 2026 · 6:00 PM – 8:00 PM (2 Hours)</div>
+            <div style="font-size: 0.8125rem;">
+              <span>Reserved For: <strong id="recPlayerName">Marco Valenzuela</strong></span> · 
+              <span>Phone: <strong id="recPlayerPhone">0917 555 4321</strong></span>
+            </div>
+          </div>
+
+          <div class="receipt-divider"></div>
+
+          <div class="receipt-charges-table">
+            <div class="receipt-charge-row">
+              <span id="recHourlyRateLine">Court Rental (2 hrs)</span>
+              <span id="recBaseTotal">₱2,400</span>
+            </div>
+            <div class="receipt-charge-row">
+              <span>Facility Lighting & Amenities</span>
+              <span>₱0.00 (Included)</span>
+            </div>
+            <div class="receipt-charge-row">
+              <span>Electronic Processing Fee</span>
+              <span>₱0.00 (Waived)</span>
+            </div>
+            <div class="receipt-charge-row grand-total">
+              <strong>Total Paid</strong>
+              <strong id="recGrandTotal" style="color: var(--court-orange); font-size: 1.15rem;">₱2,400</strong>
+            </div>
+          </div>
+
+          <div class="receipt-footer-seal">
+            <div class="receipt-qr-sample">
+              <span style="font-size: 1.4rem;">⛶</span>
+              <small>Scannable at Desk</small>
+            </div>
+            <div class="receipt-policy-note">
+              Please present this voucher or transaction reference at the reception counter upon arrival. Non-marking shoes required.
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-actions" style="margin-top: 16px;">
+          <button type="button" class="btn full" id="btnPrintReceipt">
+            🖨️ Print / Save Receipt
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "court-bball-1",
+    "name": "Championship Hardwood Court 1",
+    "sport": "basketball",
+    "surface": "Solid Maple Hardwood (FIBA Grade 1)",
+    "ratePerHour": 1200,
+    "capacity": 10,
+    "lighting": "LED Arena Broadcast Lighting",
+    "indoor": true
+  },
+  {
+    "id": "court-bball-2",
+    "name": "Community Hardwood Court 2",
+    "sport": "basketball",
+    "surface": "Hardwood Flooring",
+    "ratePerHour": 950,
+    "capacity": 10,
+    "lighting": "High-Bay Stadium LED",
+    "indoor": true
+  },
+  {
+    "id": "court-bball-3",
+    "name": "Open-Air FIBA Court 3",
+    "sport": "basketball",
+    "surface": "All-Weather Cushioned Acrylic",
+    "ratePerHour": 700,
+    "capacity": 10,
+    "lighting": "Night Floodlights",
+    "indoor": false
+  },
+  {
+    "id": "court-vball-1",
+    "name": "Olympic Taraflex Court A",
+    "sport": "volleyball",
+    "surface": "Gerflor Taraflex Sport M Plus",
+    "ratePerHour": 900,
+    "capacity": 12,
+    "lighting": "Glare-Free Volleyball Overhead",
+    "indoor": true
+  },
+  {
+    "id": "court-vball-2",
+    "name": "Pro Cushioned Court B",
+    "sport": "volleyball",
+    "surface": "Polyurethane Cushioned Floor",
+    "ratePerHour": 800,
+    "capacity": 12,
+    "lighting": "High-Bay LED",
+    "indoor": true
+  },
+  {
+    "id": "court-badmin-1",
+    "name": "Tournament Mat Court 1",
+    "sport": "badminton",
+    "surface": "BWF Certified Tournament Vinyl Mat",
+    "ratePerHour": 550,
+    "capacity": 4,
+    "lighting": "Vertical Glare-Free Shadowless LED",
+    "indoor": true
+  },
+  {
+    "id": "court-badmin-2",
+    "name": "Tournament Mat Court 2",
+    "sport": "badminton",
+    "surface": "BWF Certified Tournament Vinyl Mat",
+    "ratePerHour": 550,
+    "capacity": 4,
+    "lighting": "Vertical Glare-Free Shadowless LED",
+    "indoor": true
+  },
+  {
+    "id": "court-badmin-3",
+    "name": "Practice Court 3",
+    "sport": "badminton",
+    "surface": "Standard Non-Slip Vinyl",
+    "ratePerHour": 450,
+    "capacity": 4,
+    "lighting": "Standard Overhead Sports LED",
+    "indoor": true
+  },
+  {
+    "id": "court-pickle-1",
+    "name": "Grandstand Pickleball Court 1",
+    "sport": "pickleball",
+    "surface": "USA Pickleball Approved Cushioned Acrylic",
+    "ratePerHour": 600,
+    "capacity": 4,
+    "lighting": "Tournament Luminescence",
+    "indoor": true
+  },
+  {
+    "id": "court-pickle-2",
+    "name": "Covered Pickleball Court 2",
+    "sport": "pickleball",
+    "surface": "Textured Polyurethane",
+    "ratePerHour": 600,
+    "capacity": 4,
+    "lighting": "Covered Pavilion Floodlights",
+    "indoor": true
+  },
+  {
+    "id": "court-pickle-3",
+    "name": "Outdoor Pickleball Court 3",
+    "sport": "pickleball",
+    "surface": "Acrylic Hardcourt with Regulation Net",
+    "ratePerHour": 500,
+    "capacity": 4,
+    "lighting": "Night Floodlights",
+    "indoor": false
+  }
+]

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & About - CourtHub</title>
+  <meta name="description" content="Get in touch with the CourtHub team for tournament reservations, equipment rentals, membership inquiries, or general support.">
+  <meta property="og:title" content="Contact & About - CourtHub">
+  <meta property="og:description" content="Get in touch with the CourtHub team for tournament reservations, equipment rentals, membership inquiries, or general support.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  
+
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        
+        <a href="index.html" class="brand" aria-label="CourtHub Home">
+          <div class="logo-badge">
+            
+            <img src="images/logo.png" alt="CourtHub Logo">
+          </div>
+          <span>CourtHub</span>
+        </a>
+
+        
+        <button id="menuBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        
+        <nav id="menu" role="navigation">
+          <a href="index.html">Home</a>
+          <a href="courts.html">Courts</a>
+          <a href="book.html">Book Now</a>
+          <a href="my-bookings.html">My Bookings</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      
+      <div class="section-title-wrap">
+        <span class="section-tag">Reach Our Team</span>
+        <h1 class="section-title">Contact & About Us</h1>
+        <p class="section-desc">
+          Have questions about seasonal team leagues, private tournament bookings, or court equipment rentals? We are here to help.
+        </p>
+      </div>
+
+      
+      <div class="contact-layout">
+
+        
+
+
+        <div class="contact-info-card">
+          
+          <div class="about-summary">
+            <h3>About CourtHub</h3>
+            <p>
+              CourtHub was built to make sports court reservation seamless, reliable, and accessible for everyone. Whether you are hosting a competitive weekend basketball league, rallying on the pickleball court after school, or running volleyball drills, our complex provides championship-grade surfaces with guaranteed booking windows.
+            </p>
+          </div>
+
+          
+          <ul class="contact-channel-list">
+            <li class="contact-channel-item">
+              <div class="contact-channel-icon" aria-hidden="true">📍</div>
+              <div class="contact-channel-text">
+                <strong>Facility Location</strong>
+                <p>Bahay ni John Paul De Jesus</p>
+              </div>
+            </li>
+
+            <li class="contact-channel-item">
+              <div class="contact-channel-icon" aria-hidden="true">⏰</div>
+              <div class="contact-channel-text">
+                <strong>Operating Hours</strong>
+                <p>Open Daily: 5:00 AM – 11:00 PM (Monday to Sunday, including holidays)</p>
+              </div>
+            </li>
+
+            <li class="contact-channel-item">
+              <div class="contact-channel-icon" aria-hidden="true">📞</div>
+              <div class="contact-channel-text">
+                <strong>Telephone & Mobile</strong>
+                <p><a href="tel:+679676766767">+67 967 676 6767</a></p>
+              </div>
+            </li>
+
+            <li class="contact-channel-item">
+              <div class="contact-channel-icon" aria-hidden="true">✉️</div>
+              <div class="contact-channel-text">
+                <strong>Official Email</strong>
+                <p><a href="mailto:support@courthub.ph">support@courthub.ph</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        
+
+
+        <div class="contact-form-card">
+          <h2 class="contact-form-title">Send a Message</h2>
+          <p class="contact-form-desc">
+            Leave us a note and a member of our athletics staff will reply within 24 hours.
+          </p>
+
+          
+          <div id="sent" hidden role="alert" aria-live="polite">
+            <span aria-hidden="true" style="font-size: 1.25rem;">✓</span>
+            <div>
+              <strong>Message Sent Successfully!</strong>
+              <p style="margin: 0; font-size: 0.875rem;">Thank you for contacting CourtHub. We have received your inquiry and will be in touch shortly.</p>
+            </div>
+          </div>
+
+          <form id="contactForm" novalidate>
+            
+            <div class="form-group">
+              <label for="cName" class="form-label">Your Name *</label>
+              <input
+                type="text"
+                id="cName"
+                class="form-input"
+                placeholder="e.g. Maria Santos"
+                required
+              >
+              <small class="err" id="err-cName"></small>
+            </div>
+
+            
+            <div class="form-group">
+              <label for="cEmail" class="form-label">Email Address *</label>
+              <input
+                type="email"
+                id="cEmail"
+                class="form-input"
+                placeholder="e.g. maria.santos@example.com"
+                required
+              >
+              <small class="err" id="err-cEmail"></small>
+            </div>
+
+            
+            <div class="form-group">
+              <label for="cMsg" class="form-label">Message *</label>
+              <textarea
+                id="cMsg"
+                class="form-textarea"
+                rows="5"
+                placeholder="Tell us about your inquiry, tournament request, or feedback..."
+                required
+              ></textarea>
+              <small class="err" id="err-cMsg"></small>
+            </div>
+
+            
+            <div>
+              <button type="submit" class="btn lg full">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  
+
+
+  <footer class="foot">
+    <div class="container">
+      <div class="foot-grid">
+        
+        <div>
+          <a href="index.html" class="brand" aria-label="CourtHub Home">
+            <div class="logo-badge">
+              
+              <img src="images/logo.png" alt="CourtHub Logo">
+            </div>
+            <span>CourtHub</span>
+          </a>
+          <p class="foot-brand-desc">
+            Your premier community sports destination. Designed for players, teams, and tournament organizers seeking quality courts and frictionless scheduling.
+          </p>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Quick Links</h4>
+          <ul class="foot-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courts.html">Browse Courts</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="my-bookings.html">My Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        
+        <div>
+          <h4 class="foot-heading">Facility Information</h4>
+          <ul class="foot-info-list">
+            <li class="foot-info-item">
+              <div>
+                <strong>Operating Hours</strong>
+                <span>Open Daily: 5:00 AM – 11:00 PM</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Address</strong>
+                <span>Bahay ni John Paul De Jesus</span>
+              </div>
+            </li>
+            <li class="foot-info-item">
+              <div>
+                <strong>Contact Hotline</strong>
+                <span>+67 967 676 6767</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="foot-bottom">
+        <p>&copy; 2026 CourtHub. All rights reserved. School Project Prototype.</p>
+        <p>Basketball · Volleyball · Badminton · Pickleball</p>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
